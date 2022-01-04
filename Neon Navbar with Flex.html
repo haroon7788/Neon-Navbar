@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(179, 155, 155, 0.713);
+        }
+
+        header {
+            background: linear-gradient(to left, black 25%, greenyellow);
+        }
+
+        nav {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            padding-left: 25px;
+            height: 60px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+            align-items: center;
+            padding-right: 25px;
+        }
+
+        a {
+            display: block;
+            padding: 10px 20px;
+            position: relative;
+            text-transform: uppercase;
+            transition: all 0.5s;
+            overflow: hidden;
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+        }
+
+        a:hover {
+            color: darkgreen;
+            background-color: yellowgreen;
+            box-shadow: 0 0 20px yellowgreen, 0 0 40px yellowgreen, 0 0 80px yellowgreen;
+            transition-delay: 0.3s;
+        }
+
+        a .s-top {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(90deg, transparent, yellowgreen);
+        }
+
+        a:hover .s-top {
+            left: 100%;
+            transition: 0.4s;
+        }
+
+        a .s-bottom {
+            position: absolute;
+            bottom: 0;
+            right: -100%;
+            height: 2px;
+            width: 100%;
+            background-image: linear-gradient(270deg, transparent, yellowgreen);
+        }
+
+        a:hover .s-bottom {
+            right: 100%;
+            transition: 0.4s;
+            transition-delay: 0.2s;
+        }
+
+        a .s-right {
+            position: absolute;
+            top: -100%;
+            right: 0;
+            height: 100%;
+            width: 2px;
+            background-image: linear-gradient(180deg, transparent, yellowgreen);
+        }
+
+        a:hover .s-right {
+            top: 100%;
+            transition: 0.4s;
+            transition-delay: 0.1s;
+        }
+
+        a .s-left {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            height: 100%;
+            width: 2px;
+            background-image: linear-gradient(0deg, transparent, yellowgreen);
+        }
+
+        a:hover .s-left {
+            bottom: 100%;
+            transition: 0.4s;
+            transition-delay: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="colors.png" alt="">
+            </div>
+            <ul>
+                <li>
+
+                    <a href="#">Home
+                        <span class="s-top"></span>
+                        <span class="s-bottom"></span>
+                        <span class="s-right"></span>
+                        <span class="s-left"></span>
+                    </a>
+                </li>
+                <li>
+
+                    <a href="#">Services
+                        <span class="s-top"></span>
+                        <span class="s-bottom"></span>
+                        <span class="s-right"></span>
+                        <span class="s-left"></span>
+                    </a>
+                </li>
+                <li>
+
+                    <a href="#">About
+                        <span class="s-top"></span>
+                        <span class="s-bottom"></span>
+                        <span class="s-right"></span>
+                        <span class="s-left"></span>
+                    </a>
+                </li>
+                <li>
+
+                    <a href="#">Contact
+                        <span class="s-top"></span>
+                        <span class="s-bottom"></span>
+                        <span class="s-right"></span>
+                        <span class="s-left"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
